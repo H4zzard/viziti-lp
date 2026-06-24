@@ -1,0 +1,37 @@
+import { Navbar } from '@/components/Navbar';
+import { Footer } from '@/components/Footer';
+import { PointerGlow } from '@/components/ui/PointerGlow';
+import { Hero } from '@/components/sections/Hero';
+import { Problem } from '@/components/sections/Problem';
+import { SpatialExperience } from '@/components/sections/SpatialExperience';
+import { HowItWorks } from '@/components/sections/HowItWorks';
+import { Solutions } from '@/components/sections/Solutions';
+import { Future } from '@/components/sections/Future';
+import { Marketplace } from '@/components/sections/Marketplace';
+import { ArtificialIntelligence } from '@/components/sections/ArtificialIntelligence';
+import { Analytics } from '@/components/sections/Analytics';
+import { Manifesto } from '@/components/sections/Manifesto';
+import { CallToAction } from '@/components/sections/CallToAction';
+
+export default function Home() {
+  return (
+    <>
+      <PointerGlow />
+      <Navbar />
+      <main id="conteudo" className="relative">
+        <Hero />
+        <Problem />
+        <SpatialExperience />
+        <HowItWorks />
+        <Solutions />
+        <Future />
+        <Marketplace />
+        <ArtificialIntelligence />
+        <Analytics />
+        <Manifesto />
+        <CallToAction />
+      </main>
+      <Footer />
+    </>
+  );
+}
