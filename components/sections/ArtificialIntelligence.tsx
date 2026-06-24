@@ -7,15 +7,15 @@ import { viewportOnce } from '@/lib/motion';
 
 export function ArtificialIntelligence() {
   return (
-    <section id="inteligencia" className="relative py-32 md:py-44">
+    <section id="inteligencia" className="relative py-20 md:py-28">
       <div className="container-x">
-        <div className="grid items-center gap-16 lg:grid-cols-[1fr_1.1fr]">
+        <div className="grid items-center gap-10 md:gap-16 lg:grid-cols-[1fr_1.1fr]">
           <div>
             <Reveal>
               <SectionLabel>Inteligência artificial</SectionLabel>
             </Reveal>
             <Reveal>
-              <h2 className="mt-7 text-balance text-4xl font-light leading-[1.05] tracking-tightest text-white md:text-6xl">
+              <h2 className="mt-7 text-balance text-3xl font-light leading-[1.05] tracking-tightest text-white sm:text-4xl md:text-6xl">
                 Um guia que vive{' '}
                 <span className="text-white/40">dentro da experiência.</span>
               </h2>
@@ -97,7 +97,7 @@ function ChatBubble({
   return (
     <motion.div
       initial={{ opacity: 0, y: 12, scale: 0.97 }}
-      whileInView={{ opacity: 1, y: 0, scale: 1 }}
+      animate={{ opacity: 1, y: 0, scale: 1 }}
       viewport={viewportOnce}
       transition={{ duration: 0.6, delay, ease: [0.16, 1, 0.3, 1] }}
       className={`max-w-[82%] rounded-2xl px-4 py-3 text-sm font-light leading-relaxed ${
@@ -115,7 +115,7 @@ function Typing({ delay }: { delay: number }) {
   return (
     <motion.div
       initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
+      animate={{ opacity: 1 }}
       viewport={viewportOnce}
       transition={{ delay, duration: 0.5 }}
       className="flex items-center gap-1.5 self-start rounded-2xl rounded-tl-md border border-white/10 bg-white/[0.04] px-4 py-3.5"

@@ -19,9 +19,9 @@ export function Analytics() {
   const reduce = useReducedMotion();
 
   return (
-    <section className="relative overflow-hidden py-32 md:py-44">
+    <section className="relative overflow-hidden py-20 md:py-28">
       <div className="container-x">
-        <div className="grid items-center gap-16 lg:grid-cols-[1.1fr_1fr]">
+        <div className="grid items-center gap-10 md:gap-16 lg:grid-cols-[1.1fr_1fr]">
           {/* dashboard */}
           <Reveal>
             <div className="relative">
@@ -49,7 +49,7 @@ export function Analytics() {
                     <motion.div
                       key={i}
                       initial={{ opacity: 0, scale: 0.9 }}
-                      whileInView={{ opacity: 1, scale: 1 }}
+                      animate={{ opacity: 1, scale: 1 }}
                       viewport={viewportOnce}
                       transition={{ duration: 0.5, delay: i * 0.04 }}
                       className="relative h-16 rounded-lg border border-white/[0.06]"
@@ -66,7 +66,7 @@ export function Analytics() {
                     <motion.div
                       key={i}
                       initial={{ height: 0 }}
-                      whileInView={{ height: `${b}%` }}
+                      animate={{ height: `${b}%` }}
                       viewport={viewportOnce}
                       transition={{ duration: 0.8, delay: i * 0.05, ease: [0.16, 1, 0.3, 1] }}
                       className="flex-1 rounded-t-md bg-gradient-to-t from-accent/20 to-accent"
@@ -83,7 +83,7 @@ export function Analytics() {
                     strokeWidth="1.5"
                     strokeLinecap="round"
                     initial={{ pathLength: 0 }}
-                    whileInView={{ pathLength: 1 }}
+                    animate={{ pathLength: 1 }}
                     viewport={viewportOnce}
                     transition={{ duration: 1.6, ease: 'easeInOut' }}
                   />
@@ -107,7 +107,7 @@ export function Analytics() {
               <SectionLabel>Analytics</SectionLabel>
             </Reveal>
             <Reveal>
-              <h2 className="mt-7 text-balance text-4xl font-light leading-[1.05] tracking-tightest text-white md:text-6xl">
+              <h2 className="mt-7 text-balance text-3xl font-light leading-[1.05] tracking-tightest text-white sm:text-4xl md:text-6xl">
                 Cada exploração{' '}
                 <span className="text-white/40">conta uma história.</span>
               </h2>
@@ -124,7 +124,7 @@ export function Analytics() {
                 <motion.div
                   key={it.label}
                   initial={{ opacity: 0, y: 16 }}
-                  whileInView={{ opacity: 1, y: 0 }}
+                  animate={{ opacity: 1, y: 0 }}
                   viewport={viewportOnce}
                   transition={{ duration: 0.5, delay: i * 0.08 }}
                   className="bg-white/[0.015] p-5"

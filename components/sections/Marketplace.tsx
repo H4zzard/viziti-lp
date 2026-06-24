@@ -26,15 +26,15 @@ export function Marketplace() {
   const reduce = useReducedMotion();
 
   return (
-    <section className="relative overflow-hidden py-32 md:py-44">
+    <section className="relative overflow-hidden py-20 md:py-28">
       <div className="container-x">
-        <div className="grid items-center gap-16 lg:grid-cols-2">
+        <div className="grid items-center gap-10 md:gap-16 lg:grid-cols-2">
           <div>
             <Reveal>
               <SectionLabel>Visão de marketplace</SectionLabel>
             </Reveal>
             <Reveal>
-              <h2 className="mt-7 text-balance text-4xl font-light leading-[1.05] tracking-tightest text-white md:text-6xl">
+              <h2 className="mt-7 text-balance text-3xl font-light leading-[1.05] tracking-tightest text-white sm:text-4xl md:text-6xl">
                 Imagine milhões de espaços{' '}
                 <span className="text-gradient-accent font-normal">conectados.</span>
               </h2>
@@ -51,7 +51,7 @@ export function Marketplace() {
                 <motion.span
                   key={a}
                   initial={{ opacity: 0, y: 12 }}
-                  whileInView={{ opacity: 1, y: 0 }}
+                  animate={{ opacity: 1, y: 0 }}
                   viewport={viewportOnce}
                   transition={{ duration: 0.5, delay: i * 0.08 }}
                   className="rounded-full border border-white/10 bg-white/[0.03] px-5 py-2 text-sm font-light text-white/75"
@@ -81,7 +81,7 @@ export function Marketplace() {
                     stroke="rgba(0,215,255,0.22)"
                     strokeWidth={0.3}
                     initial={{ pathLength: 0, opacity: 0 }}
-                    whileInView={{ pathLength: 1, opacity: 1 }}
+                    animate={{ pathLength: 1, opacity: 1 }}
                     viewport={viewportOnce}
                     transition={{ duration: 1, delay: 0.2 + i * 0.07 }}
                   />
@@ -94,7 +94,7 @@ export function Marketplace() {
                     r={n.r}
                     fill={n.main ? '#00D7FF' : 'rgba(255,255,255,0.85)'}
                     initial={{ scale: 0, opacity: 0 }}
-                    whileInView={{ scale: 1, opacity: 1 }}
+                    animate={{ scale: 1, opacity: 1 }}
                     viewport={viewportOnce}
                     transition={{ duration: 0.5, delay: 0.3 + i * 0.06 }}
                     style={{ transformOrigin: `${n.x}px ${n.y}px` }}

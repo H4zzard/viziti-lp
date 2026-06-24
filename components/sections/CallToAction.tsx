@@ -8,7 +8,7 @@ export function CallToAction() {
     <section id="contato" className="relative px-4 pb-10">
       <div className="container-x">
         <Reveal>
-          <div className="relative overflow-hidden rounded-[2.5rem] border border-white/10 px-6 py-20 text-center md:px-12 md:py-28">
+          <div className="relative overflow-hidden rounded-[2rem] border border-white/10 px-6 py-16 text-center sm:rounded-[2.5rem] md:px-12 md:py-24">
             <div
               aria-hidden
               className="absolute inset-0 -z-10"
@@ -22,7 +22,7 @@ export function CallToAction() {
             <p className="text-xs font-medium uppercase tracking-[0.3em] text-accent/80">
               Comece agora
             </p>
-            <h2 className="mx-auto mt-6 max-w-3xl text-balance text-4xl font-light leading-[1.05] tracking-tightest text-white md:text-6xl">
+            <h2 className="mx-auto mt-6 max-w-3xl text-balance text-3xl font-light leading-[1.05] tracking-tightest text-white sm:text-4xl md:text-6xl">
               Pronto para deixar as pessoas explorarem antes de visitar?
             </h2>
             <p className="mx-auto mt-6 max-w-xl text-lg font-light leading-relaxed text-white/55">

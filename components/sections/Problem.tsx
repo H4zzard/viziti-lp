@@ -19,26 +19,26 @@ const newWay = [
 
 export function Problem() {
   return (
-    <section id="problema" className="relative py-32 md:py-44">
+    <section id="problema" className="relative py-20 md:py-28">
       <div className="container-x">
         <Reveal>
           <SectionLabel>O problema</SectionLabel>
         </Reveal>
         <Reveal>
-          <h2 className="mt-7 max-w-3xl text-balance text-4xl font-light leading-[1.05] tracking-tightest text-white md:text-6xl">
+          <h2 className="mt-7 max-w-3xl text-balance text-3xl font-light leading-[1.05] tracking-tightest text-white sm:text-4xl md:text-6xl">
             A forma como mostramos espaços{' '}
             <span className="text-white/40">parou no tempo.</span>
           </h2>
         </Reveal>
 
-        <div className="mt-20 grid items-stretch gap-6 lg:grid-cols-[1fr_auto_1fr]">
+        <div className="mt-12 grid items-stretch gap-6 md:mt-20 lg:grid-cols-[1fr_auto_1fr]">
           {/* OLD */}
           <motion.div
             variants={staggerContainer}
             initial="hidden"
-            whileInView="visible"
+            animate="visible"
             viewport={viewportOnce}
-            className="rounded-3xl border border-white/[0.06] bg-white/[0.015] p-8"
+            className="rounded-3xl border border-white/[0.06] bg-white/[0.015] p-6 md:p-8"
           >
             <p className="mb-8 text-sm uppercase tracking-[0.2em] text-white/40">
               Hoje
@@ -64,7 +64,7 @@ export function Problem() {
           <div className="flex items-center justify-center py-4 lg:py-0">
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
+              animate={{ opacity: 1, scale: 1 }}
               viewport={viewportOnce}
               transition={{ duration: 0.7 }}
               className="flex h-14 w-14 items-center justify-center rounded-full border border-accent/30 bg-accent/[0.06]"
@@ -74,7 +74,7 @@ export function Problem() {
                 height="22"
                 viewBox="0 0 22 22"
                 fill="none"
-                className="text-accent lg:rotate-0"
+                className="rotate-90 text-accent lg:rotate-0"
                 animate={{ x: [0, 4, 0] }}
                 transition={{ duration: 1.6, repeat: Infinity, ease: 'easeInOut' }}
               >
@@ -93,9 +93,9 @@ export function Problem() {
           <motion.div
             variants={staggerContainer}
             initial="hidden"
-            whileInView="visible"
+            animate="visible"
             viewport={viewportOnce}
-            className="relative overflow-hidden rounded-3xl border border-accent/20 bg-gradient-to-b from-accent/[0.08] to-transparent p-8"
+            className="relative overflow-hidden rounded-3xl border border-accent/20 bg-gradient-to-b from-accent/[0.08] to-transparent p-6 md:p-8"
           >
             <div
               aria-hidden

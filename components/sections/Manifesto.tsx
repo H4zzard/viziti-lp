@@ -21,14 +21,14 @@ export function Manifesto() {
   const glow = useTransform(scrollYProgress, [0, 0.5, 1], [0.04, 0.12, 0.04]);
 
   return (
-    <section ref={ref} className="relative overflow-hidden py-40 md:py-56">
+    <section ref={ref} className="relative overflow-hidden py-24 md:py-36">
       <motion.div
         aria-hidden
         style={{ opacity: glow }}
         className="pointer-events-none absolute left-1/2 top-1/2 h-[40rem] w-[40rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-accent blur-[160px]"
       />
       <div className="container-x relative">
-        <p className="mb-14 text-center text-xs font-medium uppercase tracking-[0.3em] text-accent/70">
+        <p className="mb-10 text-center text-xs font-medium uppercase tracking-[0.3em] text-accent/70 md:mb-14">
           Manifesto
         </p>
         <div className="mx-auto flex max-w-4xl flex-col items-center gap-5 text-center">
@@ -36,7 +36,7 @@ export function Manifesto() {
             <motion.p
               key={i}
               initial={{ opacity: 0, y: 28, filter: 'blur(8px)' }}
-              whileInView={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
+              animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
               viewport={{ once: true, amount: 0.6 }}
               transition={{ duration: 0.9, delay: i * 0.08, ease: [0.16, 1, 0.3, 1] }}
               className={`text-balance text-3xl font-extralight leading-[1.15] tracking-tightest sm:text-4xl md:text-5xl ${

@@ -100,14 +100,14 @@ export function Solutions() {
   const [active, setActive] = useState<number | null>(0);
 
   return (
-    <section id="solucoes" className="relative py-32 md:py-44">
+    <section id="solucoes" className="relative py-20 md:py-28">
       <div className="container-x">
         <Reveal>
           <SectionLabel>Soluções</SectionLabel>
         </Reveal>
         <div className="mt-7 flex flex-col justify-between gap-6 md:flex-row md:items-end">
           <Reveal>
-            <h2 className="max-w-2xl text-balance text-4xl font-light leading-[1.05] tracking-tightest text-white md:text-6xl">
+            <h2 className="max-w-2xl text-balance text-3xl font-light leading-[1.05] tracking-tightest text-white sm:text-4xl md:text-6xl">
               Um espaço.{' '}
               <span className="text-white/40">Infinitas indústrias.</span>
             </h2>
@@ -120,7 +120,7 @@ export function Solutions() {
           </Reveal>
         </div>
 
-        <div className="mt-16 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-12 grid gap-4 sm:grid-cols-2 md:mt-16 lg:grid-cols-4">
           {solutions.map((s, i) => {
             const isActive = active === i;
             return (
@@ -131,7 +131,7 @@ export function Solutions() {
                 onFocus={() => setActive(i)}
                 onClick={() => setActive(isActive ? null : i)}
                 initial={{ opacity: 0, y: 24 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                animate={{ opacity: 1, y: 0 }}
                 viewport={viewportOnce}
                 transition={{ duration: 0.6, delay: (i % 4) * 0.06 }}
                 className={`group relative flex flex-col overflow-hidden rounded-3xl border p-6 text-left transition-colors duration-500 ${

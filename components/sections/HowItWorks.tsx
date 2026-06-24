@@ -52,19 +52,19 @@ export function HowItWorks() {
   });
 
   return (
-    <section id="como-funciona" className="relative py-32 md:py-44">
+    <section id="como-funciona" className="relative py-20 md:py-28">
       <div className="container-x">
         <Reveal>
           <SectionLabel>Como funciona</SectionLabel>
         </Reveal>
         <Reveal>
-          <h2 className="mt-7 max-w-3xl text-balance text-4xl font-light leading-[1.05] tracking-tightest text-white md:text-6xl">
+          <h2 className="mt-7 max-w-3xl text-balance text-3xl font-light leading-[1.05] tracking-tightest text-white sm:text-4xl md:text-6xl">
             Do espaço físico à experiência viva,{' '}
             <span className="text-white/40">em seis etapas.</span>
           </h2>
         </Reveal>
 
-        <div ref={ref} className="relative mt-20 pl-2">
+        <div ref={ref} className="relative mt-12 pl-2 md:mt-20">
           {/* track */}
           <div className="absolute left-[1.05rem] top-2 bottom-2 w-px bg-white/10 md:left-[1.55rem]" />
           {/* progress */}
@@ -73,12 +73,12 @@ export function HowItWorks() {
             className="absolute left-[1.05rem] top-2 bottom-2 w-px origin-top bg-gradient-to-b from-accent to-accent/0 md:left-[1.55rem]"
           />
 
-          <div className="flex flex-col gap-10 md:gap-14">
+          <div className="flex flex-col gap-8 md:gap-14">
             {steps.map((s, i) => (
               <motion.div
                 key={s.n}
                 initial={{ opacity: 0, x: 24 }}
-                whileInView={{ opacity: 1, x: 0 }}
+                animate={{ opacity: 1, x: 0 }}
                 viewport={viewportOnce}
                 transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1], delay: i * 0.05 }}
                 className="relative flex items-start gap-6 pl-12 md:pl-20"

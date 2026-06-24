@@ -6,7 +6,6 @@ import { Problem } from '@/components/sections/Problem';
 import { SpatialExperience } from '@/components/sections/SpatialExperience';
 import { HowItWorks } from '@/components/sections/HowItWorks';
 import { Solutions } from '@/components/sections/Solutions';
-import { Future } from '@/components/sections/Future';
 import { Marketplace } from '@/components/sections/Marketplace';
 import { ArtificialIntelligence } from '@/components/sections/ArtificialIntelligence';
 import { Analytics } from '@/components/sections/Analytics';
@@ -24,7 +23,6 @@ export default function Home() {
         <SpatialExperience />
         <HowItWorks />
         <Solutions />
-        <Future />
         <Marketplace />
         <ArtificialIntelligence />
         <Analytics />

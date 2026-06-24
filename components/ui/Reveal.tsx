@@ -25,7 +25,7 @@ export function Reveal({
       className={className}
       variants={variants}
       initial="hidden"
-      whileInView="visible"
+      animate="visible"
       viewport={viewportOnce}
       transition={delay ? { delay } : undefined}
     >

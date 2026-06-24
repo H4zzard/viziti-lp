@@ -4,7 +4,6 @@ const nav = [
   { label: 'Problema', href: '#problema' },
   { label: 'Como funciona', href: '#como-funciona' },
   { label: 'Soluções', href: '#solucoes' },
-  { label: 'Futuro', href: '#futuro' },
   { label: 'Inteligência', href: '#inteligencia' },
 ];
 
