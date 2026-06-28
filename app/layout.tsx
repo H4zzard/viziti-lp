@@ -6,7 +6,7 @@ const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-inter',
-  weight: ['200', '300', '400', '500', '600', '700'],
+  weight: ['200', '300', '400', '500', '600'],
 });
 
 const siteUrl = 'https://viziti.com';

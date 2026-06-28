@@ -1,6 +1,5 @@
 import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
-import { PointerGlow } from '@/components/ui/PointerGlow';
 import { Hero } from '@/components/sections/Hero';
 import { Problem } from '@/components/sections/Problem';
 import { SpatialExperience } from '@/components/sections/SpatialExperience';
@@ -15,7 +14,6 @@ import { CallToAction } from '@/components/sections/CallToAction';
 export default function Home() {
   return (
     <>
-      <PointerGlow />
       <Navbar />
       <main id="conteudo" className="relative">
         <Hero />

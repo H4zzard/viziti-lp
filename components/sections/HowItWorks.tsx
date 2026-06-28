@@ -78,7 +78,7 @@ export function HowItWorks() {
               <motion.div
                 key={s.n}
                 initial={{ opacity: 0, x: 24 }}
-                animate={{ opacity: 1, x: 0 }}
+                whileInView={{ opacity: 1, x: 0 }}
                 viewport={viewportOnce}
                 transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1], delay: i * 0.05 }}
                 className="relative flex items-start gap-6 pl-12 md:pl-20"

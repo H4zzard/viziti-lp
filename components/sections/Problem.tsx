@@ -36,7 +36,7 @@ export function Problem() {
           <motion.div
             variants={staggerContainer}
             initial="hidden"
-            animate="visible"
+            whileInView="visible"
             viewport={viewportOnce}
             className="rounded-3xl border border-white/[0.06] bg-white/[0.015] p-6 md:p-8"
           >
@@ -64,7 +64,7 @@ export function Problem() {
           <div className="flex items-center justify-center py-4 lg:py-0">
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
+              whileInView={{ opacity: 1, scale: 1 }}
               viewport={viewportOnce}
               transition={{ duration: 0.7 }}
               className="flex h-14 w-14 items-center justify-center rounded-full border border-accent/30 bg-accent/[0.06]"
@@ -93,7 +93,7 @@ export function Problem() {
           <motion.div
             variants={staggerContainer}
             initial="hidden"
-            animate="visible"
+            whileInView="visible"
             viewport={viewportOnce}
             className="relative overflow-hidden rounded-3xl border border-accent/20 bg-gradient-to-b from-accent/[0.08] to-transparent p-6 md:p-8"
           >

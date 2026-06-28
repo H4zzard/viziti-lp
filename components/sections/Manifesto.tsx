@@ -25,7 +25,7 @@ export function Manifesto() {
       <motion.div
         aria-hidden
         style={{ opacity: glow }}
-        className="pointer-events-none absolute left-1/2 top-1/2 h-[40rem] w-[40rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-accent blur-[160px]"
+        className="pointer-events-none absolute left-1/2 top-1/2 h-[30rem] w-[30rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-accent blur-[90px]"
       />
       <div className="container-x relative">
         <p className="mb-10 text-center text-xs font-medium uppercase tracking-[0.3em] text-accent/70 md:mb-14">
@@ -35,9 +35,9 @@ export function Manifesto() {
           {lines.map((l, i) => (
             <motion.p
               key={i}
-              initial={{ opacity: 0, y: 28, filter: 'blur(8px)' }}
-              animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
-              viewport={{ once: true, amount: 0.6 }}
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.5 }}
               transition={{ duration: 0.9, delay: i * 0.08, ease: [0.16, 1, 0.3, 1] }}
               className={`text-balance text-3xl font-extralight leading-[1.15] tracking-tightest sm:text-4xl md:text-5xl ${
                 l.dim ? 'text-white/40' : 'text-white'

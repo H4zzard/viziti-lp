@@ -23,11 +23,20 @@ export function HeroBackground() {
       {/* fine grid */}
       <div className="grid-bg absolute inset-0 opacity-60 [mask-image:radial-gradient(80%_60%_at_50%_30%,black,transparent)]" />
 
-      {/* drifting aurora blobs */}
+      {/* static aurora wash for mobile — leve, sem blur extremo nem animação */}
+      <div
+        className="absolute left-1/2 top-[18%] h-[30rem] w-[30rem] -translate-x-1/2 rounded-full blur-[70px] md:hidden"
+        style={{
+          background:
+            'radial-gradient(circle, rgba(0,215,255,0.18), transparent 65%)',
+        }}
+      />
+
+      {/* drifting aurora blobs — apenas desktop, onde a GPU aguenta */}
       {!reduce && (
-        <>
+        <div className="hidden md:block">
           <motion.div
-            className="absolute left-1/2 top-[18%] h-[42rem] w-[42rem] -translate-x-1/2 rounded-full blur-[120px]"
+            className="absolute left-1/2 top-[18%] h-[36rem] w-[36rem] -translate-x-1/2 rounded-full blur-[90px]"
             style={{
               background:
                 'radial-gradient(circle, rgba(0,215,255,0.22), transparent 65%)',
@@ -36,7 +45,7 @@ export function HeroBackground() {
             transition={{ duration: 9, repeat: Infinity, ease: 'easeInOut' }}
           />
           <motion.div
-            className="absolute left-[20%] top-[40%] h-[24rem] w-[24rem] rounded-full blur-[110px]"
+            className="absolute left-[20%] top-[40%] h-[22rem] w-[22rem] rounded-full blur-[80px]"
             style={{
               background:
                 'radial-gradient(circle, rgba(0,215,255,0.12), transparent 70%)',
@@ -45,7 +54,7 @@ export function HeroBackground() {
             transition={{ duration: 14, repeat: Infinity, ease: 'easeInOut' }}
           />
           <motion.div
-            className="absolute right-[16%] top-[30%] h-[20rem] w-[20rem] rounded-full blur-[110px]"
+            className="absolute right-[16%] top-[30%] h-[18rem] w-[18rem] rounded-full blur-[80px]"
             style={{
               background:
                 'radial-gradient(circle, rgba(99,102,241,0.14), transparent 70%)',
@@ -53,7 +62,7 @@ export function HeroBackground() {
             animate={{ x: [0, -36, 0], y: [0, 30, 0] }}
             transition={{ duration: 16, repeat: Infinity, ease: 'easeInOut' }}
           />
-        </>
+        </div>
       )}
 
       {/* the portal — concentric rings drawing the eye into the space */}

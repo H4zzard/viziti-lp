@@ -18,13 +18,13 @@ export const fadeIn: Variants = {
   visible: { opacity: 1, transition: { duration: 1.1, ease: easeOut } },
 };
 
+// Reveal leve — apenas opacity + deslocamento (sem filter: blur, que trava em mobile)
 export const blurUp: Variants = {
-  hidden: { opacity: 0, y: 32, filter: 'blur(12px)' },
+  hidden: { opacity: 0, y: 24 },
   visible: {
     opacity: 1,
     y: 0,
-    filter: 'blur(0px)',
-    transition: { duration: 1, ease: easeOut },
+    transition: { duration: 0.7, ease: easeOut },
   },
 };
 
@@ -44,4 +44,4 @@ export const scaleIn: Variants = {
   },
 };
 
-export const viewportOnce = { once: true, amount: 0.3 } as const;
+export const viewportOnce = { once: true, amount: 0.2, margin: '0px 0px -10% 0px' } as const;

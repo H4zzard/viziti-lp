@@ -10,12 +10,11 @@ const container = {
   visible: { transition: { staggerChildren: 0.14, delayChildren: 0.35 } },
 };
 const item = {
-  hidden: { opacity: 0, y: 26, filter: 'blur(10px)' },
+  hidden: { opacity: 0, y: 26 },
   visible: {
     opacity: 1,
     y: 0,
-    filter: 'blur(0px)',
-    transition: { duration: 1, ease: easeOut },
+    transition: { duration: 0.9, ease: easeOut },
   },
 };
 

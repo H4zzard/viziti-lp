@@ -131,7 +131,7 @@ export function Solutions() {
                 onFocus={() => setActive(i)}
                 onClick={() => setActive(isActive ? null : i)}
                 initial={{ opacity: 0, y: 24 }}
-                animate={{ opacity: 1, y: 0 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 viewport={viewportOnce}
                 transition={{ duration: 0.6, delay: (i % 4) * 0.06 }}
                 className={`group relative flex flex-col overflow-hidden rounded-3xl border p-6 text-left transition-colors duration-500 ${

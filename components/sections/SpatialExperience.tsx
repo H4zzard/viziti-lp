@@ -25,7 +25,7 @@ export function SpatialExperience() {
     >
       <div
         aria-hidden
-        className="pointer-events-none absolute left-1/2 top-1/2 h-[36rem] w-[36rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-accent/[0.07] blur-[140px]"
+        className="pointer-events-none absolute left-1/2 top-1/2 h-[28rem] w-[28rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-accent/[0.07] blur-[80px]"
       />
 
       <motion.div style={{ y, opacity }} className="container-x text-center">

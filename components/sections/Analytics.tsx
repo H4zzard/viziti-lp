@@ -49,7 +49,7 @@ export function Analytics() {
                     <motion.div
                       key={i}
                       initial={{ opacity: 0, scale: 0.9 }}
-                      animate={{ opacity: 1, scale: 1 }}
+                      whileInView={{ opacity: 1, scale: 1 }}
                       viewport={viewportOnce}
                       transition={{ duration: 0.5, delay: i * 0.04 }}
                       className="relative h-16 rounded-lg border border-white/[0.06]"
@@ -66,7 +66,7 @@ export function Analytics() {
                     <motion.div
                       key={i}
                       initial={{ height: 0 }}
-                      animate={{ height: `${b}%` }}
+                      whileInView={{ height: `${b}%` }}
                       viewport={viewportOnce}
                       transition={{ duration: 0.8, delay: i * 0.05, ease: [0.16, 1, 0.3, 1] }}
                       className="flex-1 rounded-t-md bg-gradient-to-t from-accent/20 to-accent"
@@ -83,7 +83,7 @@ export function Analytics() {
                     strokeWidth="1.5"
                     strokeLinecap="round"
                     initial={{ pathLength: 0 }}
-                    animate={{ pathLength: 1 }}
+                    whileInView={{ pathLength: 1 }}
                     viewport={viewportOnce}
                     transition={{ duration: 1.6, ease: 'easeInOut' }}
                   />
@@ -124,7 +124,7 @@ export function Analytics() {
                 <motion.div
                   key={it.label}
                   initial={{ opacity: 0, y: 16 }}
-                  animate={{ opacity: 1, y: 0 }}
+                  whileInView={{ opacity: 1, y: 0 }}
                   viewport={viewportOnce}
                   transition={{ duration: 0.5, delay: i * 0.08 }}
                   className="bg-white/[0.015] p-5"

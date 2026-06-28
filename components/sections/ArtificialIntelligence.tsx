@@ -97,7 +97,7 @@ function ChatBubble({
   return (
     <motion.div
       initial={{ opacity: 0, y: 12, scale: 0.97 }}
-      animate={{ opacity: 1, y: 0, scale: 1 }}
+      whileInView={{ opacity: 1, y: 0, scale: 1 }}
       viewport={viewportOnce}
       transition={{ duration: 0.6, delay, ease: [0.16, 1, 0.3, 1] }}
       className={`max-w-[82%] rounded-2xl px-4 py-3 text-sm font-light leading-relaxed ${
@@ -115,7 +115,7 @@ function Typing({ delay }: { delay: number }) {
   return (
     <motion.div
       initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
+      whileInView={{ opacity: 1 }}
       viewport={viewportOnce}
       transition={{ delay, duration: 0.5 }}
       className="flex items-center gap-1.5 self-start rounded-2xl rounded-tl-md border border-white/10 bg-white/[0.04] px-4 py-3.5"
