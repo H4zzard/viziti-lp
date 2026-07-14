@@ -6,6 +6,7 @@ import { VizitiLogo } from '@/components/ui/VizitiLogo';
 
 const links = [
   { label: 'Problema', href: '#problema' },
+  { label: 'Demo', href: '#demo' },
   { label: 'Como funciona', href: '#como-funciona' },
   { label: 'Soluções', href: '#solucoes' },
   { label: 'Inteligência', href: '#inteligencia' },

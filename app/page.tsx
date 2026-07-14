@@ -3,6 +3,7 @@ import { Footer } from '@/components/Footer';
 import { Hero } from '@/components/sections/Hero';
 import { Problem } from '@/components/sections/Problem';
 import { SpatialExperience } from '@/components/sections/SpatialExperience';
+import { LiveDemo } from '@/components/sections/LiveDemo';
 import { HowItWorks } from '@/components/sections/HowItWorks';
 import { Solutions } from '@/components/sections/Solutions';
 import { Marketplace } from '@/components/sections/Marketplace';
@@ -19,6 +20,7 @@ export default function Home() {
         <Hero />
         <Problem />
         <SpatialExperience />
+        <LiveDemo />
         <HowItWorks />
         <Solutions />
         <Marketplace />
